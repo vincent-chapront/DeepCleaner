@@ -45,8 +45,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Commands\DeepRebuildSolutionCommand.cs" />
+    <Compile Include="Commands\DeepCleanProjectCommand.cs" />
+    <Compile Include="Commands\DeepRebuildCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Commands\MyCommand.cs" />
+    <Compile Include="Commands\DeepCleanSolutionCommand.cs" />
     <Compile Include="DeepCleanerPackage.cs" />
     <Compile Include="VSCommandTable.cs">
       <AutoGen>True</AutoGen>

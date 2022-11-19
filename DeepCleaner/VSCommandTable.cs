@@ -21,6 +21,9 @@ namespace DeepCleaner
     internal sealed partial class PackageIds
     {
         public const int MyMenuGroup = 0x0001;
-        public const int MyCommand = 0x0100;
+        public const int DeepCleanSolutionCommand = 0x0100;
+        public const int DeepRebuildSolutionCommand = 0x0101;
+        public const int DeepCleanProjectCommand = 0x0102;
+        public const int DeepRebuildProjectCommand = 0x0103;
     }
 }

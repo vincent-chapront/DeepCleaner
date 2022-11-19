@@ -9,20 +9,47 @@
 	<Commands package="DeepCleaner">
 		<Groups>
 			<Group guid="DeepCleaner" id="MyMenuGroup" priority="0x0600">
-				<Parent guid="VSMainMenu" id="Tools" />
+				<Parent guid="VSMainMenu" id="Build" />
 			</Group>
 		</Groups>
 
 		<!--This section defines the elements the user can interact with, like a menu command or a button
         or combo box in a toolbar. -->
 		<Buttons>
-			<Button guid="DeepCleaner" id="MyCommand" priority="0x0100" type="Button">
+			<Button guid="DeepCleaner" id="DeepCleanSolutionCommand" priority="0x0100" type="Button">
 				<Parent guid="DeepCleaner" id="MyMenuGroup" />
-				<Icon guid="ImageCatalogGuid" id="StatusInformation" />
+				<Icon guid="ImageCatalogGuid" id="CleanData" />
 				<CommandFlag>IconIsMoniker</CommandFlag>
 				<Strings>
-					<ButtonText>My Command</ButtonText>
-					<LocCanonicalName>.DeepCleaner.MyCommand</LocCanonicalName>
+					<ButtonText>Deep Clean Solution</ButtonText>
+					<LocCanonicalName>.Build.DeepCleanSolution</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="DeepCleaner" id="DeepRebuildSolutionCommand" priority="0x0101" type="Button">
+				<Parent guid="DeepCleaner" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="BuildSolution" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Deep Rebuild Solution</ButtonText>
+					<LocCanonicalName>.Build.DeepRebuildSolution</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="DeepCleaner" id="DeepCleanProjectCommand" priority="0x0102" type="Button">
+				<Parent guid="DeepCleaner" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="CleanData" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Deep Clean Project</ButtonText>
+					<LocCanonicalName>.Build.DeepCleanProject</LocCanonicalName>
+				</Strings>
+			</Button>
+			<Button guid="DeepCleaner" id="DeepRebuildProjectCommand" priority="0x0103" type="Button">
+				<Parent guid="DeepCleaner" id="MyMenuGroup" />
+				<Icon guid="ImageCatalogGuid" id="BuildSelection" />
+				<CommandFlag>IconIsMoniker</CommandFlag>
+				<Strings>
+					<ButtonText>Deep Rebuild Project</ButtonText>
+					<LocCanonicalName>.Build.DeepRebuildProject</LocCanonicalName>
 				</Strings>
 			</Button>
 		</Buttons>
@@ -31,7 +58,10 @@
 	<Symbols>
 		<GuidSymbol name="DeepCleaner" value="{1ebd075e-2c78-4ce2-bdb7-df5072167287}">
 			<IDSymbol name="MyMenuGroup" value="0x0001" />
-			<IDSymbol name="MyCommand" value="0x0100" />
+			<IDSymbol name="DeepCleanSolutionCommand" value="0x0100" />
+			<IDSymbol name="DeepRebuildSolutionCommand" value="0x0101" />
+			<IDSymbol name="DeepCleanProjectCommand" value="0x0102" />
+			<IDSymbol name="DeepRebuildProjectCommand" value="0x0103" />
 		</GuidSymbol>
 	</Symbols>
 </CommandTable>
