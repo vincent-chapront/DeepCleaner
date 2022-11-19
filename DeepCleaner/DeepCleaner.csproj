@@ -48,6 +48,9 @@
     <Compile Include="Commands\DeepRebuildSolutionCommand.cs" />
     <Compile Include="Commands\DeepCleanProjectCommand.cs" />
     <Compile Include="Commands\DeepRebuildCommand.cs" />
+    <Compile Include="Helpers\CleanerHelpers.cs" />
+    <Compile Include="Helpers\DirectoryHelpers.cs" />
+    <Compile Include="Helpers\LogHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Commands\DeepCleanSolutionCommand.cs" />
     <Compile Include="DeepCleanerPackage.cs" />
