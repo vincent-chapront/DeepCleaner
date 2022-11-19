@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
 	<Metadata>
-		<Identity Id="DeepCleaner.c2c9c43c-e52f-4011-b777-0dfb1bd8da88" Version="1.0" Language="en-US" Publisher="Vincent Chapront" />
-		<DisplayName>DeepCleaner</DisplayName>
+		<Identity Id="VCT.DeepCleaner.c2c9c43c-e52f-4011-b777-0dfb1bd8da88" Version="1.0.0" Language="en-US" Publisher="Vincent Chapront" />
+		<DisplayName>VCT.DeepCleaner</DisplayName>
 		<Description xml:space="preserve">Add command to delete bin and obj with clean and rebuildAdd </Description>
 		<MoreInfo>https://github.com/vincent-chapront/DeepCleaner</MoreInfo>
 		<Icon>Resources\Icon.png</Icon>
