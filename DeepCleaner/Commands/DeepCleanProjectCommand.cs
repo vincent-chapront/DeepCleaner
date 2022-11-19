@@ -9,9 +9,7 @@ namespace DeepCleaner
         {
             var currentProject = await VS.Solutions.GetActiveProjectAsync();
 
-            await CleanerHelpers.CleanProject(currentProject);
-
-            await VS.StatusBar.ShowMessageAsync("Ready");
+            await CleanerHelpers.CleanProjectAsync(currentProject);
         }
     }
 }

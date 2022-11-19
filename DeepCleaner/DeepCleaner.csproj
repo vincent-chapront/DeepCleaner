@@ -47,7 +47,7 @@
   <ItemGroup>
     <Compile Include="Commands\DeepRebuildSolutionCommand.cs" />
     <Compile Include="Commands\DeepCleanProjectCommand.cs" />
-    <Compile Include="Commands\DeepRebuildCommand.cs" />
+    <Compile Include="Commands\DeepRebuildProjectCommand.cs" />
     <Compile Include="Helpers\CleanerHelpers.cs" />
     <Compile Include="Helpers\DirectoryHelpers.cs" />
     <Compile Include="Helpers\LogHelpers.cs" />

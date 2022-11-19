@@ -1,11 +1,15 @@
-﻿namespace DeepCleaner
+﻿using DeepCleaner.Helpers;
+
+namespace DeepCleaner
 {
     [Command(PackageIds.DeepRebuildProjectCommand)]
     internal sealed class DeepRebuildProjectCommand : BaseCommand<DeepRebuildProjectCommand>
     {
         protected override async Task ExecuteAsync(OleMenuCmdEventArgs e)
         {
-            await VS.MessageBox.ShowWarningAsync("DeepRebuildProjectCommand", "Button clicked");
+            var currentProject = await VS.Solutions.GetActiveProjectAsync();
+
+            await CleanerHelpers.CleanProjectAsync(currentProject, true);
         }
     }
 }

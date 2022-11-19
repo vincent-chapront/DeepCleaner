@@ -9,5 +9,17 @@
             await pane.WriteLineAsync(log);
             action();
         }
+
+        internal static string BuildHeader(string s, int maxSize = 100)
+        {
+            var l = (maxSize - s.Length) / 2;
+            var fix = new string('=', l);
+            var res = $"{fix} {s} {fix}";
+            if (res.Length % 2 == 1)
+            {
+                res = $"{res}=";
+            }
+            return res;
+        }
     }
 }
